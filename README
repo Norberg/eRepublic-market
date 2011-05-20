@@ -1,0 +1,4 @@
+Create database:
+sqlite3 market.db
+sqlite> CREATE TABLE market(datetime datetime, company int, country int, item int, quality int, price float, amount int);
+
