@@ -31,8 +31,8 @@ def save(country,company, item, quality, amount, price):
 	        [date, company, country, item, quality, price, amount])
 		conn.commit();
 		c.close()
-	except Exception as e:
-		print "Error:", e
+	except Exception:
+		print "Error:"
 
 retrive_market_data("Sweden", "Food_raw")
 retrive_market_data("Sweden", "Weapon_raw")
